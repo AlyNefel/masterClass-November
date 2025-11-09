@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- method 1 to add CSS : best practice  -->
+     <link rel="stylesheet" href="style.css">
+     
+    <!-- method 2 : add style tag
+      <style>
+        body{
+    background-color: red;
+}
+    </style> -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
 </head>
 <body>
-    <h1>Hello from contact</h1>
+  <div class="container">
+    <h1 id="redClass" class="redClass" >Hello from contact</h1>
+    <h1 class="greenClass">Test class</h1>
+    </div>
     <!-- Tbale : A structured way to display dat in rows colums -->
 
-    <table border="1" width="250">
+    <table class="styled-table" border="1" width="250">
         <!-- Table Header -->
         <thead>
           <tr>
@@ -36,7 +49,7 @@
     <!-- a way to collect data from the user  -->
     <h2>Inputs:</h2>
 
-    <form  action="signup.js">
+    <form id="styled-form" action="signup.js">
         <!-- text input -->
          <label for="">First name</label>
          <input type="text" placeholder="plz enter ur name!" required> <br><br>

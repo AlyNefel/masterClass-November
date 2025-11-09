@@ -1,0 +1,86 @@
+/* css selection : directly with tag name */
+
+body{
+    margin:0;
+    padding:0;
+    background-image: url("../HTML/first-session/assets/images/Gemini_Generated_Image_ya6l6eya6l6eya6l.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+    background-position: center;
+    opacity: 0.8;
+    
+}
+h1{
+    color:red
+}
+
+/* selection with class */
+.redClass{
+    color:yellow
+}
+/* selection with Id */
+
+#redClass{
+    color :blue
+}
+
+.container{
+    /* border-left:5px solid lightgreen;
+    border-right:5px solid coral; */
+border:5px solid lightgreen;
+    width:50%;
+    padding:20px;
+    margin:10px
+}
+
+.styled-table{
+  border-collapse: collapse;  
+box-shadow: 2px 2px 30px  black;
+background-color: white;
+border-radius: 10px;
+width:70%;
+height: 200px;
+}
+
+.styled-table th,
+.styled-table td
+{
+    color:blue;
+    background-color: lightblue;
+}
+.styled-table td{
+    color:rgb(22, 194, 157);
+    /* padding:20px */
+    text-align: center;
+    font-weight: bold;
+   
+}
+
+#styled-form{
+    background-color: bisque;
+    padding:30px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 35px lightskyblue;
+
+}
+
+#styled-form input,
+#style-form select,
+#styled-form textarea{
+ width:100%;
+ border-radius: 3px;
+
+}
+
+#styled-form input[type="color"]{
+    width:80px;
+    height:80px
+}
+
+#styled-form textarea{
+    resize: none;
+
+}
+
