@@ -90,8 +90,97 @@ for (var index = 0; index < note.length; index++) {
 console.log(note1)
 
 // concat two arrays 
-var array1=["test",5,7]
+var array1=["test",5,7] //array1.push(array2[0]) 
 var array2=["concat",88,99]
 // ["test",5,7,"concat",88,99]
-var combinedArray = array1.concat(array2)
-console.log(combinedArray)
+// var combinedArray = array1.concat(array2)
+// console.log(combinedArray)
+//[ 'test', 5, 7, 'concat', 88, 99 ]
+// logic ta3 concat 
+ ////array1.push(array2[0]) =>["test",5,7,"concat"]
+ ////array1.push(array2[1]) =["test",5,7,concat,88]
+ //array1.push(array2[2]) =[ 'test', 5, 7, 'concat', 88, 99 ]
+
+ function myConcat(arr1,arr2){
+
+   for(var i=0;i<arr2.length;i++){
+    arr1.push(arr2[i])
+   }
+   console.log(arr1)
+ }
+
+ myConcat([5,3,8],["test",true])
+
+
+
+//console.log([]+[])
+
+//-how to make a copy of an array in js
+var testA=[4,3,8];
+var testACopy=testA
+console.log(testACopy)
+testACopy.push("be carefull !")
+console.log(testACopy)
+console.log(testA)
+
+// use slice :
+var original=[9,8,7,88]
+var copy=original.slice()
+copy.push("this is how to make a copy of arr in js")
+console.log(original)
+console.log(copy)
+// spread operator es6 - 2015
+var copy1=[...original,55,"cool feature"] // []
+copy1.push("this is how to make a copy of arr in js")
+console.log(original)
+console.log(copy1)
+
+
+//2- slice to extract elements from existing array
+var copy2 =original.slice(1,3)
+console.log(copy2)
+
+//-3- slice with negative param
+var copy3=original.slice(-3)
+console.log(copy3)
+
+var longText = "lorem ipsum hss. jhjh hdsjh j sdhfjdsh"
+// split : 
+var textArr=longText.split(".")
+console.log(textArr)
+var phone="(0033)-As-54-52"
+console.log(phone[3])
+
+// includes
+console.log(phone.includes("As"))
+
+// find products
+var products=[
+  "SMARTpHONE",
+  "laptop",
+  "headPhones",
+  "Phonecase",
+  "smart watch"
+]
+//search keyword
+var searchword="PhoNE"
+var result=[]
+//output (result) :[smartphone,headphones,phonecase]
+
+//logic : bech nthabet fi ay element fi wost array ; est ce que fih kelmet "phone" ? 
+  // ken true : bech na3mel push lel element fi result array
+  // ken false : mana3mel chay
+  // bech nraja3 array mta3 result 
+//step1 : bech n7ather for loop 
+for (var i = 0; i < products.length; i++) {
+  //if :products[i].includes(searchword)
+
+  if(products[i].toLocaleLowerCase().includes(searchword.toLocaleLowerCase())){
+      //result.push(products[i])
+result.push(products[i])
+    }
+  
+  
+}
+console.log(result)
+// return result      
