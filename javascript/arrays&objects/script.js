@@ -145,8 +145,9 @@ var copy3=original.slice(-3)
 console.log(copy3)
 
 var longText = "lorem ipsum hss. jhjh hdsjh j sdhfjdsh"
+//longText[0] =>"l"
 // split : 
-var textArr=longText.split(".")
+var textArr=longText.split("")
 console.log(textArr)
 var phone="(0033)-As-54-52"
 console.log(phone[3])
@@ -183,4 +184,23 @@ result.push(products[i])
   
 }
 console.log(result)
-// return result      
+// return result    
+
+function search(array,query){
+  var res=[]
+  for (var i = 0; i < array.length; i++) {
+  //if :products[i].includes(searchword)
+
+  if(array[i].toLocaleLowerCase().includes(query.toLocaleLowerCase())){
+      //result.push(products[i])
+res.push(array[i])
+    }
+  
+}
+console.log(res)
+}
+search(products,searchword) // function invoke
+search(["test1","javascript","55"],"test") // function invoke
+
+console.log(typeof products)
+
