@@ -1,0 +1,38 @@
+/* select element in css */
+/* 1- select with tag name */
+body{
+    background-color: aqua;
+}
+h1{
+    color:red;
+    font-size: 50px;
+
+}
+
+/* 2-select with id  */
+#h2Id{
+    color:green
+}
+
+h2{
+    color :blue
+}
+
+/* 3-select with class */
+.classH2{
+    font-size: 20px;
+}
+
+.secondClass{
+   color:blueviolet 
+}
+
+.thirdClass{
+    background-color: yellow;
+    box-shadow: 1px 1px 10px black;
+    color:brown;
+    border:2px solid black;
+    border-radius: 15px;
+    margin:10px;
+    padding:15px
+}
