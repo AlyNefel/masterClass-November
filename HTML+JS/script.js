@@ -13,6 +13,7 @@ function reverseString(string){
 }
 
 function showReversed(){
+console.log(document)
  var inputTextValue =document.getElementById("inputText").value
  console.log(inputTextValue)
  var divValue =document.getElementById("outputText")
