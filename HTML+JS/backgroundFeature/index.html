@@ -1,0 +1,39 @@
+<!-- DOM selectors === find things in home 
+ 1+ getElementWithId("chair") => "find the element witrh id chair" 
+ P.S: the id is unique => return ta3 getElementWithId rahi element wa7ed 
+ 2+getElementByClassName("btn")
+=>return : element or more 
+PS: list of element : najem na3lem 3liha loop 
+
+3+getElementByTagName(p): nafss by Classname  but uses tag name
+
+4+document.querySelector("#chair") / querySelector(".btn")
+
+++++
+Events: sensors // switches
+onclick
+onkeydown
+oninput=>like some one is typing in chat
+onsubmit
+onmouseover/onmouseout/onmousein
+onscroll
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change BG</title>
+</head>
+<body>
+    <label for="">Choose the BG color :</label>
+    <input type="color" name="" id="input-color">
+    <br>
+    <button onclick="applyColor()">Apply color</button>
+    <div onmouseover="changeWidth()" 
+    onmouseout="resizeDiv()"
+    id="color-display" style="border:1px solid black;height: 250px;width:250px;"></div>
+    <script src="script.js"></script>
+</body>
+</html>
