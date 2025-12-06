@@ -20,6 +20,17 @@ freqObject[char]+=1 //freqObject[char]=freqObject[char]+1
     
 }
 console.log(freqObject)
-
+// step 2 : loop through object to extract the most frequent letter
+var maxCount=0
+var maxLetter=""
+for(var letter in freqObject){
+    console.log(letter,freqObject[letter])
+    if(freqObject[letter]>maxCount){
+        maxCount=freqObject[letter]
+        maxLetter=letter
+        console.log("inside if condition ",maxCount,maxLetter)
+    }
 }
-frequency("banana")
+console.log(`the letter with max frequency is : ${maxLetter} with ${maxCount} times`)
+}
+frequency("bannana")
