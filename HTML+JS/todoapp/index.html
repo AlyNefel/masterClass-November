@@ -8,15 +8,18 @@
 </head>
 <body>
 <div class="container mt-4">
-    <h1>My TO-DO List</h1>
+    <h1 id="title">My TO-DO List</h1>
 <div class="input-group mb-3">
-  <input id="task-input" type="text" class="form-control" placeholder="Please enter your todo"  aria-describedby="button-addon2">
+  <input id="task-input" type="text" class="form-control"
+  oninput="handleInput()"
+  onkeydown="handleKeyDown(event)"
+  placeholder="Please enter your todo"  aria-describedby="button-addon2">
   <button class="btn btn-outline-secondary" onclick="handleAddTask()" type="button" id="button-addon2">Add</button>
 </div>
 
 <!-- List of todods -->
  <ul id="task-list" class="list-group">
-
+<li onclick=""></li>
  </ul>
 
 </div>
