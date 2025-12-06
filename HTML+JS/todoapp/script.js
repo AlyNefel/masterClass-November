@@ -5,6 +5,7 @@ var list = document.getElementById("task-list")
 
 var title = document.getElementById("title")
 
+var quantity =document.getElementById("quantity")
 
 
 function createTask(taskText){
@@ -58,4 +59,26 @@ event.target.remove()
 
 function changeWidth(event){
 event.target.style.backgroundColor="green"
+}
+
+function increaseQuantity(){
+    console.log(typeof quantity.textContent)
+    // change the type of quantity.textContent to number 
+    var number = Number(quantity.textContent)
+    if(number<10){
+        console.log(typeof number) 
+        quantity.textContent = number+1
+
+    }
+}
+
+function decreaseQuantity(){
+    console.log(typeof quantity.textContent)
+    // change the type of quantity.textContent to number 
+    var number = Number(quantity.textContent)
+    if(number>0){
+        console.log(typeof number) 
+        quantity.textContent = number-1
+
+    }
 }
