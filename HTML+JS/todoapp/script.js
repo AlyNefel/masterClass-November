@@ -82,3 +82,8 @@ function decreaseQuantity(){
 
     }
 }
+
+const testArrow=()=>{
+
+}
+//function testArrow(){}

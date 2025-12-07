@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+</head>
+<body>
+    <div class="container mt-4">
+      <!-- Grid System -->
+       <div class="row">
+        <div class="col-9">
+            <div class="row g-3">
+                <!-- product1 -->
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="javascript-logo-7539.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Product1</h5>
+    <p class="card-text">Price : 10$</p>
+    <a onclick="addToCart('Product1',10)" class="btn btn-primary">Add to card</a>
+  </div>
+</div>
+                </div>
+                <!-- product2 -->
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="javascript-logo-7539.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Product2</h5>
+    <p class="card-text">Price : 20$</p>
+    <a onclick="addToCart('Product2',20)" class="btn btn-primary">Add to card</a>
+  </div>
+</div>
+                </div>
+              <!-- product3 -->
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="javascript-logo-7539.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Product3</h5>
+    <p class="card-text">Price : 25$</p>
+    <a onclick="addToCart('Product3',25)" class="btn btn-primary">Add to card</a>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h3>🛒Cart</h3>
+                </div>
+                <div class="card-body">
+                    <ul id="cart-list" class="list-group"></ul>
+                    <h5>Total:<span id="total">0</span></h5>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
