@@ -50,6 +50,7 @@ total+=item.price*item.quantity
 //create an li element
 var li=document.createElement("li")
 li.className="list-group-item"
+// "hello "+name => `hello ${name}`
 li.innerHTML=` 
 <h4> ${name} </h4>
 <h5>unit Price :${item.price} / Quantity : ${item.quantity}</h5>
