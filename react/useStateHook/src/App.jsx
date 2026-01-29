@@ -6,6 +6,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
  // const [name,setName]=useState("")
+ // const [colors,setColors]=useState([])
  const [isDarkMode,setIsDarkMode]=useState(true)
  //changeTheme
   const changeTheme =()=>setIsDarkMode(!isDarkMode)
@@ -41,7 +42,7 @@ width:"450px"
         {/* Button to change dark/light mode */}
  <div className="card">
         <button onClick={changeTheme}>
-          Change
+        Change to   {isDarkMode?"Light":"Dark"}
         </button>
         </div>
         <div  style={styleMode}  className="card">
