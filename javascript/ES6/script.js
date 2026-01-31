@@ -135,7 +135,7 @@
 //   copyArray.push(99)
 //   console.log(copyArray,originalArray)
  let originalArray = [2,5,8]
-  let copyArray=[...originalArray]
+  let copyArray=[...originalArray,4,53]
   console.log(originalArray,copyArray)
  copyArray.push(99)
   console.log(copyArray,originalArray)
