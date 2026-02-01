@@ -18,6 +18,7 @@ const handleAddTask=(newTask)=>{
 // add task to the tasks array
 setTasks([...tasks,newTask])
 // make the input empty again
+setTask("")
 console.log(tasks)
 }
   return (
